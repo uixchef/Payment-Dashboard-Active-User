@@ -5,11 +5,9 @@ import type { NextConfig } from "next";
 const appDir = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
-  // Use the app directory as Turbopack root so deps resolve from my-app/node_modules
-  // (avoids picking a parent folder that has package.json but no tailwindcss)
-  turbopack: {
-    root: appDir,
-  },
+  // Turbopack root only for local dev when a parent folder has package.json (e.g. monorepo).
+  // Omit on Vercel so production build/output routing is not affected.
+  ...(!process.env.VERCEL ? { turbopack: { root: appDir } } : {}),
   images: {
     remotePatterns: [
       {
