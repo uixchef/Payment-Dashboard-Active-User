@@ -49,7 +49,7 @@ export function NewUserWelcomePanel() {
           <ArrowRight className="size-4" aria-hidden />
         </Button>
         <Button variant="outline" asChild>
-          <Link href="/payment-hub">Preview standard dashboard</Link>
+          <Link href="/payment-hub/active">Preview active dashboard</Link>
         </Button>
       </div>
     </section>

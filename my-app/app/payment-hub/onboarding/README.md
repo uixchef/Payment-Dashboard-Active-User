@@ -4,14 +4,14 @@
 
 Route: **`/payment-hub/onboarding`**
 
-Experience for accounts with **zero transactions** (or before setup is complete). The standard hub at **`/payment-hub`** is for users with **one or more transactions** (metrics, charts, full dashboard).
+Experience for accounts with **zero transactions** (or before setup is complete). The **active** hub is **`/payment-hub/active`** (metrics, charts, full dashboard).
 
 ## Decision rule (product)
 
 | Condition | Primary experience |
 |-----------|---------------------|
 | `transactionCount === 0` (or onboarding incomplete) | `/payment-hub/onboarding` or conditional empty state inside hub |
-| `transactionCount >= 1` | `/payment-hub` (current dashboard) |
+| `transactionCount >= 1` | `/payment-hub/active` |
 
 Wire this in the data layer or layout when APIs exist; until then both routes are reachable for design and QA.
 
@@ -30,5 +30,5 @@ Wire this in the data layer or layout when APIs exist; until then both routes ar
 ## Next steps
 
 - [ ] Replace placeholder steps and primary CTA with real flows.
-- [ ] Redirect from `/payment-hub` → `/payment-hub/onboarding` when `transactionCount === 0` (if product chooses server-driven routing).
+- [ ] Redirect from `/` or `/payment-hub/active` → `/payment-hub/onboarding` when `transactionCount === 0` (if product chooses server-driven routing).
 - [ ] Add analytics events for onboarding start / complete.
