@@ -118,6 +118,8 @@ For route-level notes, see [`my-app/app/payment-hub/README.md`](my-app/app/payme
 ```text
 .
 ├── docs/
+│   ├── images/
+│   │   └── payments-dashboard-overview.png
 │   └── reusing-this-layout.md    # Shell extraction and cross-app reuse
 ├── my-app/                       # Next.js application
 │   ├── app/
@@ -137,13 +139,11 @@ For route-level notes, see [`my-app/app/payment-hub/README.md`](my-app/app/payme
 
 ## Screenshots and demo
 
-Add **hero and module screenshots** (desktop and one narrow viewport) once visuals are approved. Recommended captures:
+**Payments hub — overview** (KPIs, revenue trends, distribution, top customers, channels, recent transactions, and bottom widgets).
 
-- Full dashboard with date filter and KPI row.
-- Revenue charts and customer or channel section.
-- Recent transactions or activity surface.
+![Payments dashboard overview — sidebar, period filter, metrics, charts, activity, and insights](docs/images/payments-dashboard-overview.png)
 
-Replace this subsection with image links or a short Loom when available.
+*Optional:* add a narrow-viewport capture or a short Loom walkthrough when you want mobile or motion documented.
 
 ---
 
