@@ -4,6 +4,8 @@ Operational surface for **HighLevel payments**: a data-rich hub where businesses
 
 This repository is one half of a broader **payments ecosystem redesign**. It ships the **fintech-grade dashboard** used after activation; onboarding and first-run education live elsewhere by design, so each experience can optimize for clarity, performance, and release cadence without compromising the other.
 
+**Repository:** [github.com/uixchef/Payment-Dashboard-Active-User](https://github.com/uixchef/Payment-Dashboard-Active-User)
+
 ---
 
 ## Context: payments system redesign
@@ -147,9 +149,10 @@ Replace this subsection with image links or a short Loom when available.
 
 ## Related repositories
 
-**Explore the onboarding experience →** [INSERT NEW USER REPO LINK]
+- **Active user dashboard (this repo):** [Payment-Dashboard-Active-User](https://github.com/uixchef/Payment-Dashboard-Active-User)
+- **New user (onboarding):** Explore the onboarding experience → [INSERT NEW USER REPO LINK]
 
-That repository owns **new user / first-run** flows; this repository owns **steady-state operations** after value is live in the account.
+The onboarding repository owns **first-run** flows; this repository owns **steady-state operations** after value is live in the account.
 
 ---
 
